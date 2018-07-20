@@ -1,0 +1,1 @@
+clientUserMap = clientUsers.stream().collect(Collectors.toMap(ClientUser::getUserId, Function.identity()));
