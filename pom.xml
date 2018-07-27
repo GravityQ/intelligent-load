@@ -60,9 +60,9 @@
         </dependency>
         <!--文件上传-->
         <!--<dependency>-->
-            <!--<groupId>commons-fileupload</groupId>-->
-            <!--<artifactId>commons-fileupload</artifactId>-->
-            <!--<version>1.3.3</version>-->
+        <!--<groupId>commons-fileupload</groupId>-->
+        <!--<artifactId>commons-fileupload</artifactId>-->
+        <!--<version>1.3.3</version>-->
         <!--</dependency>-->
         <dependency>
             <groupId>commons-io</groupId>
@@ -87,12 +87,18 @@
             <version>1.7.16</version>
         </dependency>-->
         <!--模板引擎-->
-        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-thymeleaf -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
             <version>2.0.3.RELEASE</version>
         </dependency>
+        <!--双工异步通信-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-websocket</artifactId>
+            <version>2.0.0.RELEASE</version>
+        </dependency>
+
         <!--参数校验-->
         <!-- https://mvnrepository.com/artifact/javax.validation/validation-api -->
         <dependency>

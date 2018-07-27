@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <script src="webjars/jquery/3.1.1/jquery.min.js"></script>
-    <script src="webjars/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="webjars/bootstrap/3.3.5/css/bootstrap.min.css"/>
+    <script src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>
     <meta charset="UTF-8">
     <title>index</title>
 </head>
@@ -12,6 +13,7 @@
     <form action="/uploadPicture" method="post"  enctype="multipart/form-data">
         <div><input type="file"  name="file"></div>
         <div><button type="submit" name="save" >Submit</button></div>
+        <div th:text="${error}" th:if="${error}"></div>
     </form>
 </div>
 </body>

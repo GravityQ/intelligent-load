@@ -6,11 +6,9 @@ import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import javax.servlet.http.HttpServletRequest;
 import java.io.*;
 
 
@@ -43,6 +41,7 @@ public class FileController {
 	public String uploadPicture(MultipartFile file, RedirectAttributes redirectAttributes) throws IOException {
 		if (file.isEmpty() || !isImage(file)) {
 			redirectAttributes.addFlashAttribute("error", "文件错误！");
+			return "uploadPage";
 		}
 		String filename = file.getOriginalFilename();
 		File tempFile = File.createTempFile("pic", getFileExtension(filename), PICTURE_DIR.getFile());
@@ -69,7 +68,7 @@ public class FileController {
 	 * @param file
 	 * @return
 	 */
-	private static boolean isImage(MultipartFile file) {
+	private boolean isImage(MultipartFile file) {
 		return file.getContentType().startsWith("image");
 	}
 }

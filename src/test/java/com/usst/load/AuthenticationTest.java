@@ -9,6 +9,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
+ * shiro框架,慕课网
  * Created by 齐军林 on 2018/6/10.
  */
 public class AuthenticationTest {
