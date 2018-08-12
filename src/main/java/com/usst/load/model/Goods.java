@@ -24,9 +24,13 @@ public class Goods {
 	 */
 	private String goodsName;
 	/**
+	 * 货物来源
+	 */
+	private String goodsOrigin;
+	/**
 	 * 货物重量,单位为kg
 	 */
-	private BigDecimal weight;
+	private Float weight;
 	/**
 	 * 货物长度,单位cm
 	 */
@@ -39,6 +43,10 @@ public class Goods {
 	 * 货物高度,单位cm
 	 */
 	private Integer high;
+	/**
+	 * 是否可以旋转，0代表可以任意旋转，1代表可以水平旋转，2代表不可旋转
+	 */
+	private Integer turn;
 
 	/**
 	 * 获取货物的体积
