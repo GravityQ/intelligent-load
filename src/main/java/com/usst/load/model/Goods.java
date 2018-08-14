@@ -3,7 +3,7 @@ package com.usst.load.model;
 import lombok.Data;
 import lombok.ToString;
 
-import java.math.BigDecimal;
+import java.util.Date;
 
 /**
  * 货物
@@ -22,11 +22,11 @@ public class Goods {
 	/**
 	 * 货物名称
 	 */
-	private String goodsName;
+	private String name;
 	/**
 	 * 货物来源
 	 */
-	private String goodsOrigin;
+	private String origin;
 	/**
 	 * 货物重量,单位为kg
 	 */
@@ -48,6 +48,9 @@ public class Goods {
 	 */
 	private Integer turn;
 
+	private Date createTime;
+
+	private Date updateTime;
 	/**
 	 * 获取货物的体积
 	 *
