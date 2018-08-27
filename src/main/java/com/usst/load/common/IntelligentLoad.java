@@ -72,7 +72,7 @@ public class IntelligentLoad {
 			Room xRoom = new Room();
 			Room yRoom = new Room();
 			Room zRoom = new Room();
-			//空间划分
+			// todo 空间划分,恰好放入时??
 			if (goods.getLength() >= goods.getWidth()) {
 				xRoom.setYLength(goods.getLength());
 				yRoom.setXLength(rootRoom.getXLength());
@@ -95,7 +95,9 @@ public class IntelligentLoad {
 			roomNode.setXRoom(new RoomNode(xRoom));
 			roomNode.setYRoom(new RoomNode(yRoom));
 			roomNode.setZRoom(new RoomNode(zRoom));
+			return true;
 		}
+		return false;
 	}
 
 	/**
