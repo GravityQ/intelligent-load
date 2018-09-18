@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
+<head th:include="header :: header">
     <script src="webjars/jquery/3.1.1/jquery.min.js"></script>
     <script src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="webjars/bootstrap/3.3.5/css/bootstrap.min.css"/>
@@ -8,12 +8,13 @@
     <title>index</title>
 </head>
 <body>
-<h2>hello</h2>
-<div class="container">
+<header th:include="templates/header :: header"></header>
+<h2>hello  ..</h2>
+<!--<div class="container">
     <h2>Button</h2>
     <p>.btn 类是按钮的基本样式:</p>
     <a href="../templates/ws.html">跳转</a>
     <button type="button" class="btn-warning">基本按钮</button>
-</div>
+</div>-->
 </body>
 </html>
