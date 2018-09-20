@@ -4,7 +4,7 @@ server:
 #数据库
 spring:
   datasource:
-    url: mysql://localhost:3306/intelligent_load?characterEncoding=utf-8
+    url: jdbc:mysql://localhost:3306/intelligent_load?characterEncoding=utf-8
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: 123456

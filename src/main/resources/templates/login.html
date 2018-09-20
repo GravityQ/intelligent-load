@@ -4,38 +4,57 @@
     <script src="webjars/jquery/3.1.1/jquery.min.js"></script>
     <script src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>
-    <meta charset="UTF-8">
+    <link rel="stylesheet" href="webjars/bootstrap/3.3.7/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/login.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/reset.css"/>
+    <meta charset="UTF-8" />
     <title>Title</title>
 </head>
 <body>
-<div th:include="header :: header"></div>
-<div id="container">
-    <div class="content">
-        <form action="#" th:action="@{user/login}" method="post">
-            <header>用户登录</header>
-            <div class="layui-input-inline">
-                <input type="text" name="account" required lay-verify="required" placeholder="邮箱" autocomplete="off"
-                       class="layui-input">
+<div class="order-mg-main">
+    <div class="login-center">
+        <div class="login-title">
+            <div class="login-help">
+                <span class="dateTime"></span>
             </div>
-            <div class="layui-input-inline">
-                <input type="password" name="password" required lay-verify="required" placeholder="密码" autocomplete="off"
-                       class="layui-input">
+        </div>
+        <div class="login-form-div">
+            <div class="login-form">
+                <form th:action="@{/login}" method="post">
+                    <div class="item">
+							<span class="item-username">
+								<img src="../static/images/item-username.jpg">
+							</span>
+                        <input id="username" name="username" type="text" placeholder="请输入用户名" class="username">
+                    </div>
+                    <div class="item">
+							<span class="item-password">
+								<img src="../static/images/item-password.jpg">
+							</span>
+                        <input id="password" name="password" type="password" placeholder="请输入密码" class="password">
+                    </div>
+                    <!--<div class="item">
+                        <input type="text" id="validate" name="validate" placeholder="验证码" class="w-263">
+                        <span class="item-validateCode">
+								<img src="/shop-admin/login/validateImage" class="validateImageClass" width="100%">
+							</span>
+                    </div>-->
+                    <input type="submit" value="登录" class="btn-submit" id="login">
+                    <div class="other-operate">
+                        <a href="" class="link-fgt-pwd" id="resetPwd">修改密码</a>
+                    </div>
+                </form>
             </div>
-            <div class="layui-input-inline login-btn">
-                <button type="submit" class="layui-btn">登录</button>
-            </div>
-            <hr/>
-            <!--<div class="layui-input-inline">
-                <button type="button" class="layui-btn layui-btn-primary">QQ登录</button>
-            </div>
-            <div class="layui-input-inline">
-                <button type="button" class="layui-btn layui-btn-normal">微信登录</button>
-            </div>-->
-            <p><a href="javascript:;" class="fl">立即注册</a><a href="javascript:;" class="fr">忘记密码？</a></p>
-
-        </form>
+        </div>
+        <!-- <div class="copyright">
+             <span>Copyright © 2016 Bitmain Technologies. All Rights Reserved</span>
+             <span>京公网安备 11010802022514号</span><br><br>
+             <div>
+                 <span>version:</span>
+                 <span>0.0.0</span>
+             </div>
+         </div>-->
     </div>
 </div>
-
 </body>
 </html>
