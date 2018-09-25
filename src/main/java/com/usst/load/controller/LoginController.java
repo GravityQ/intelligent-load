@@ -27,7 +27,7 @@ public class LoginController {
 		User selectUser = userService.select(user);
 		if (selectUser!=null) {
 			request.getSession().setAttribute("user",selectUser);
-			return "home";
+			return "userList";
 		}
 		return "login";
 	}

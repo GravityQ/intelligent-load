@@ -5,59 +5,70 @@
 */
 
 /*define html5 tag style*/
-body{
-	font-family:"Microsoft Yahei", 微软雅黑,"Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", 华文细黑, sans-serif;
-	font-size: 14px;
-	padding:0;
-	margin:0;
+body {
+    font-family: "Microsoft Yahei", 微软雅黑, "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", 华文细黑, sans-serif;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
 }
-h1{
- 	font-size: 48px;
+
+h1 {
+    font-size: 48px;
 }
-h2{
- 	font-size: 36px;
+
+h2 {
+    font-size: 36px;
 }
-h3{
- 	font-size: 24px;
+
+h3 {
+    font-size: 24px;
 }
-h4{
- 	font-size: 20px;
+
+h4 {
+    font-size: 20px;
 }
-h5{
- 	font-size: 14px;
+
+h5 {
+    font-size: 14px;
 }
-h6{
-  	font-size: 12px;
+
+h6 {
+    font-size: 12px;
 }
-a{
-	color:#529bd6;
-	text-decoration: none;
+
+a {
+    color: #529bd6;
+    text-decoration: none;
 }
+
 a:hover,
 a.active,
 a:active,
 a:focus {
-	color: #497bfd;
-	text-decoration:none;
+    color: #497bfd;
+    text-decoration: none;
 }
 
-ol{
-	margin: 0;
-	padding-left: 18px;
+ol {
+    margin: 0;
+    padding-left: 18px;
 }
-ul{
-	list-style: none;
-	margin-bottom: 0;
-	padding: 0;
+
+ul {
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0;
 }
+
 input:focus {
-	outline: none;
-}
-h1,h2,h3,h4,h5,p,ul,li,div,p {
-	margin: 0;
-	padding: 0;
+    outline: none;
 }
 
-.btn:active,.btn:focus,.btn:hover {
-  outline: none;
+h1, h2, h3, h4, h5, p, ul, li, div, p {
+    margin: 0;
+    padding: 0;
+}
+
+.btn:active, .btn:focus, .btn:hover {
+    outline: none;
 }

@@ -1,6 +1,8 @@
 #将该变量设置为-1，可以禁用HTTP，将其配置成0会在随机端口上启用
 server:
   port: 8088
+#  servlet:
+#    context-path: "/intelligent-load"
 #数据库
 spring:
   datasource:
@@ -19,6 +21,8 @@ spring:
       max-file-size: 1MB
       #整个请求的最大容量
       max-request-size: 10MB
+  mvc:
+    static-path-pattern: /static/**
 
 
 #日志配置
@@ -29,7 +33,6 @@ logging:
 mybatis:
   mapper-locations: classpath:mappers/*.xml
   type-aliases-package: com.usst.load.dao
-
 
 
 

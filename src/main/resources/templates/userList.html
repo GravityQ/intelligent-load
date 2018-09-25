@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
+      layout:decorator="layout">
+<head>
+    <meta charset="UTF-8">
+    <title>用户列表</title>
+</head>
+<body>
+<div layout:fragment="content" id="page-wrapper">
+    <div class="header">
+        <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li class="active">Data</li>
+        </ol>
+    </div>
+    <div id="page-inner">
+
+        </div>
+        <div th:include="footer::footer"></div>
+    </div>
+</body>
+</html>
